@@ -1,0 +1,13 @@
+#main-table {
+    padding: 50px;
+}
+
+#main-table table thead th {
+    background: blue;
+    color: white;
+}
+#main-table table tbody {
+    text-align: left;
+    background: pink;
+    text-transform: 
+}

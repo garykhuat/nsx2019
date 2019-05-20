@@ -1,6 +1,27 @@
-<h2>Hello <%= user.name %></h2>
-<ul>
-<% users.forEach(function(user){ %>
-    ,<li><%=user%></li>
-  <% }); %>
-</u1>
+<html>
+  <head>
+      <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+      <div id='main-table'>
+        <table border="1" width='100%'>
+          <thead class="aaa">  
+              <tr>
+                <th>Name</th>
+                <th>Class</th>
+              </tr>
+          </thead>
+          <tbody>
+              <% users.forEach(function(user){ %>  
+              <tr>
+                <th><%= user.name %></th>
+                <td><%= user.class %></td>
+              </tr>
+              <% }); %>
+          </tbody>
+        </table>
+      </div>
+  </body>
+</html>
+
+
